@@ -5,25 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descarga la App</title>
     <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Fondo tipo Netflix */
         body {
-            background-color: #141414;
-            color: white;
-            font-family: Arial, sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?technology,dark') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             text-align: center;
-            padding: 50px;
         }
-        .container {
-            max-width: 600px;
-            margin: auto;
+
+        /* Efecto de desenfoque para darle más estilo */
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.6);
+            max-width: 500px;
+            width: 90%;
         }
+
+        /* Título */
         h1 {
             font-size: 2.5em;
+            color: #E50914;
             font-weight: bold;
+            margin-bottom: 10px;
         }
+
+        /* Texto */
         p {
             font-size: 1.2em;
+            color: white;
             margin-bottom: 20px;
         }
+
+        /* Botón de descarga */
         .download-btn {
             display: inline-block;
             background-color: #E50914;
@@ -33,19 +59,23 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            transition: background 0.3s;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.6);
         }
+
         .download-btn:hover {
             background-color: #B20710;
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Descarga nuestra App</h1>
-        <p>Haz clic en el botón de abajo para descargar la aplicación.</p>
+    <div class="overlay">
+        <h1>Descarga Netflix</h1>
+        <p>Haz clic en el botón para descargar la aplicación en tu dispositivo.</p>
         <a href="https://raw.githubusercontent.com/MiguelAngelSanJim/android/main/netflix.apk" class="download-btn" download>📥 Descargar APK</a>
+        <p>1Link no fake fullHD 1080p no virus</p>
     </div>
 
 </body>
